@@ -10,8 +10,8 @@ affiche à un utilisateur un rendu de monnaie en nombre de billets de 10 € et 
 </p>
         <h2>résultat</h2>
         <?php
-            $payer=122;
-            $versé=200;
+            $payer=177;
+            $versé=400;
             $difference=$versé - $payer;
             $reste;
             $billets;
@@ -26,11 +26,11 @@ affiche à un utilisateur un rendu de monnaie en nombre de billets de 10 € et 
             if(2<=$difference){
                 $billets = floor(($difference/2));
                 $difference=$difference - floor(($difference/2));
-                echo" $billets billets de 2 €  -";}
+                echo" $billets piece de 2 €  -";}
             if(1<=$difference){
                 $billets = (($difference/1))-1;
                 $difference=$difference - (($difference/1));
-                echo" $billets billets de 1 €  -";}
+                echo" $billets piece de 1 €  -";}
         ?>
     </body>
 </html>

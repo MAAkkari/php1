@@ -11,17 +11,19 @@ respective (français ➔ « Salut », anglais ➔ « Hello », espagnol ➔ « 
         <h2>résultat</h2>
         <?php
         $i;
-        $FRA="Mickaël";
+        $FRA="Mikaël";
         $ESP="Virgile";
         $ENG="Marie-Claire";
         $tab=[$FRA,$ESP,$ENG];
+        function tableau(array $tab,string $FRA, string $ESP, String $ENG){
         for ($i=0;$i<sizeof($tab);$i++) {
             if ($tab[$i]==$FRA){
                 Echo"<br>".("Salut $FRA");}
             elseif ($tab[$i]==$ENG){
                 Echo"<br>".("Hello $ENG");}
             else{Echo"<br>".("Hola $ESP");}
-        }
+        }}
+        echo tableau($tab,$FRA,$ESP,$ENG);
         ?>
     </body>
 </html>
