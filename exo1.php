@@ -14,10 +14,7 @@
     <?php
         $phrase="Notre formation DL commence aujourd'hui";
         $length=strlen($phrase);
-        echo "la phrase << $phrase >> contient $length caractères.";
+        echo " la phrase << $phrase >> contient $length caractères.";
     ?>
-
-
-        
 </body>
 </html>

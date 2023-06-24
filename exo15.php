@@ -27,24 +27,33 @@ Instancier 2 personnes et afficher leurs informations : nom, prénom et âge
             public function setNom(string $nom){
                 $this->_nom = $nom;
             }
+            public function getDateNaissance(){
+                return $this->_dateNaissance;
         }
-        Function calcul (datetime $x){
+        public function getPrenom(){
+            return $this->_prenom;}
+       
+        }
+        function calcul ($dateNaissance){
             $origin = date_create();
-            $target = $x;
+            $target = $dateNaissance;
             $age = $origin->diff($target);
-            echo "Age de la personne : $age->y ans";
+            echo " a $age->y ans";}
 
+        $p1 = new Personne ("DUPONT", "Michel ", "M", "1980-02-19");
+        $p2 = new Personne ("DUCHEMIN", "Alice ", "M", "1985-01-17");
 
-        }
-        $p1 = new Personne ("DUPONT", "Michel", "M", "1980-02-19");
-        $p2 = new Personne ("DUCHEMIN", "Alice", "M", "1985-01-17");
-        
-        echo $p1->getNom(); die;" ";$p1->$_nom; "a";
-        $date=$sp1->$_dateNaissance;
+        echo $p1->getPrenom();
+        echo $p1->getNom();
+        $date=$p1->getDateNaissance();
         calcul($date);
-        
+        echo "<br>".$p2->getPrenom();
+        echo $p2->getNom(); 
+        $date=$p2->getDateNaissance();
+        calcul($date);
         ?>
         
     </body>
 </html>
+
 
