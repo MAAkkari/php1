@@ -8,12 +8,12 @@
     d'articles, son prix hors taxe et un taux de TVA (exprimé en décimal. Ex : 20 % -> 0.2)</p>
         <h2>résultat</h2>
         <?php
-        $prix=9.99;
+        $prix=9.99; 
         $quantité=5;
         $taux=0.2;
         $facture;
-        $facture=$prix*$quantité*(1+$taux);
-        $prix=number_format($prix,2);
+        $facture=$prix*$quantité*(1+$taux); // calcule ce qu'il faut payer a partir du prix de ce qui est payer et de la TVA
+        $prix=number_format($prix,2); // arrondie a deux chiffres apres la virgule
         echo"Prix unitaire de l'arcticle : $prix €";
         echo "<br>"."Quantité : 5";
         echo "<br>"."Taux de TVA : $taux ";

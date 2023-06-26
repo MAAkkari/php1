@@ -8,11 +8,10 @@
 </p>
         <h2>résultat</h2>
         <?php
-        $origin = date_create();
-        $target = date_create('2009-10-13');
-        $age = $origin->diff($target);
-        echo "Age de la personne : $age->y ans $age->m mois $age->d jours"
-        
+        $origin = date_create('2018-05-21'); //date actuelle
+        $target = date_create('1985-01-17'); // date de naissance de la personne 
+        $age = $origin->diff($target); // $age recois la difference entre la date actuelle et la date de naissance de la personne 
+        echo "Age de la personne : $age->y ans $age->m mois $age->d jours" // affiche l'age dans la bon format
         ?>
         
     </body>

@@ -13,7 +13,7 @@
         </p>
         <h2>résultat</h2>
         <?php
-        $age=10;
+        $age=10; // boucle si qui affiche la categorie selon l'intervale dans le quel se trouve l'age
         if (6<=$age && $age<=7) echo"L'enfant qui a $age ans appartient a la categorie << Poussin >>";
         else if (8<=$age && $age<=9) echo"L'enfant qui a $age ans appartient a la categorie << Pupille >>";
         else if (10<=$age && $age<=11) echo"L'enfant qui a $age ans appartient a la categorie << Minime >>";

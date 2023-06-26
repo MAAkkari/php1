@@ -11,7 +11,7 @@
     Ecrire un algorithme permettant de compter le nombre de caractères contenus dans cette phrase 
     (espaces inclus) </p>
     <h2>résultat</h2>
-    <?php
+    <?php //crée une chaine et utilise strlen() pour afficher la taille de la chaine
         $phrase="Notre formation DL commence aujourd'hui";
         $length=strlen($phrase);
         echo " la phrase << $phrase >> contient $length caractères.";

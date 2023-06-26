@@ -13,11 +13,11 @@ plus de 20 ans, alors celle-ci est imposable (sinon ce n'est pas le cas, « non 
         $age=32;
         $sexe="F";
         $impots="";
-        if(18<=$age && $age<=35 && $sexe=="F") {
+        if(18<=$age && $age<=35 && $sexe=="F") { // si c'est une femme dans le bon interval d'age alors impossable
             $impots=("imposable.");}
-        elseif(20<=$age && $sexe=="M") {
+        elseif(20<=$age && $sexe=="M") { // si c'est un homme dans le bon interval d'age alors impossable
             $impots=("impossable.");}
-        else {
+        else { // sinon pas impossable
             $impots=("non impossable.");}
         echo("Age : $age");
         echo"<br>".("Sexe : $sexe");

@@ -13,9 +13,9 @@
     <?php
         $phrase="Engage le jeu que je le gagne";
         $x=$phrase ;
-            $x=str_replace(" ", "", "$phrase");
-            $x=strtolower($x);
-        if ($x == strrev($x))
+            $x=str_replace(" ", "", "$phrase"); //supprime les espaces dans la string 
+            $x=strtolower($x); //met la string en minuscule 
+        if ($x == strrev($x)) //inverse le contenue de la string si elle colle palindrome si elle ne colle pas alors pas palindrome
             echo("La phrase << $phrase >> est palindrome");
         else
             echo("La phrase << $phrase >> n'est pas palindrome");

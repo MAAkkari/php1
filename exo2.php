@@ -7,10 +7,10 @@
 </head>
 <body>
     <h1> Exercice 2</h1>
-    <p> A partir de la phrase de l’exercice 1, écrire l’instruction permettant de compter le nombre de mots 
+    <p> A partir de la phrase de l'exercice 1, écrire l'instruction permettant de compter le nombre de mots 
 contenus dans celle-ci. </p>
     <h2>résultat</h2>
-    <?php
+    <?php //crée une string et calcul le nombre de mot avec str_word_count()
         $phrase="Notre formation DL commence aujourd'hui";
         $length=str_word_count($phrase);
         echo "la phrase << $phrase >> contient $length mots.";

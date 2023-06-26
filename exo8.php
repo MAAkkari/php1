@@ -13,7 +13,7 @@ forme :
         $x;
         $resultat;
         echo("tableau de $nombre");
-        for ($x = 1; $x <= 10; $x++) {
+        for ($x = 1; $x <= 10; $x++) { // multiplie le $nombre par des chiffres de 1 a 10 et affiche dans le bon format
             $resultat=$x*$nombre;
             echo "<br>"."$x x $nombre = $resultat";    
         }

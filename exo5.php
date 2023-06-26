@@ -12,8 +12,8 @@ Attention, la valeur générée devra être arrondie à 2 décimales.</p>
     <h2>résultat</h2>
     <?php
     $franc=100;
-    $euro=$franc/6.56;
-    $euro = number_format($euro, 2);
+    $euro=$franc/6.56; // taux de converse franc a euro 
+    $euro = number_format($euro, 2); //arrondie a 2 chiffres apres la virgule
     echo"Montant en francs : $franc ";
     echo "<br>"."$franc francs = $euro € ";
 

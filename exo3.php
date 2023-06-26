@@ -7,13 +7,13 @@
 </head>
 <body>
     <h1> Exercice 3</h1>
-    <p> A partir de la phrase de l’exercice 1, écrire l’instruction permettant de remplacer le mot 
-« aujourd’hui » par le mot « demain ». Afficher l’ancienne et la nouvelle phrase. </p>
+    <p> A partir de la phrase de l'exercice 1, écrire l'instruction permettant de remplacer le mot 
+« aujourd'hui » par le mot « demain ». Afficher l'ancienne et la nouvelle phrase. </p>
     <h2>résultat</h2>
-    <?php
+    <?php 
         $phrase="Notre formation DL commence aujourd'hui";
         echo ("$phrase");
-        echo (str_replace("aujourd'hui","demain","$phrase"));
+        echo (str_replace("aujourd'hui","demain","$phrase")); //remplace le mot aujourd'hui par demain grace a str_replace()
     ?>
 
 

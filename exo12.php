@@ -16,7 +16,7 @@ respective (français ➔ « Salut », anglais ➔ « Hello », espagnol ➔ « 
         $ENG="Marie-Claire";
         $tab=[$FRA,$ESP,$ENG];
         function tableau(array $tab,string $FRA, string $ESP, String $ENG){
-        for ($i=0;$i<sizeof($tab);$i++) {
+        for ($i=0;$i<sizeof($tab);$i++) { // selon FRA ESP ENG affiche la salutation dans la langue associer 
             if ($tab[$i]==$FRA){
                 Echo"<br>".("Salut $FRA");}
             elseif ($tab[$i]==$ENG){
